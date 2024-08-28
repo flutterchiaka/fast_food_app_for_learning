@@ -1,5 +1,6 @@
 import 'package:fast_food_app_for_learning/constantas/app_color.dart';
 import 'package:fast_food_app_for_learning/pages/home_page/home.dart';
+import 'package:fast_food_app_for_learning/pages/intro_page/intro.dart';
 import 'package:flutter/material.dart';
 
 class FoodApp extends StatelessWidget {
@@ -7,16 +8,15 @@ class FoodApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: AppColors.primaryColor,
         appBarTheme: const AppBarTheme(
           backgroundColor: AppColors.primaryColor,
-
-        )
+        ),
       ),
-      home: const HomePage(),
+      home: const IntroPage(),
     );
   }
 }
