@@ -11,6 +11,6 @@ extension SizedBoxExtension on num {
       SizedBox(width: toDouble(), height: height);
 
   Widget heightBoxWithWidth([double? width]) =>
-      SizedBox(height: toDouble(), width: width);
+      SizedBox(height: toDouble(), width: width,);
 }
 
