@@ -1,4 +1,5 @@
 import 'package:fast_food_app_for_learning/extensions/sized_box_extension.dart';
+import 'package:fast_food_app_for_learning/pages/home_page/home.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -42,23 +43,27 @@ class IntroPage extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
 
-
             //Get started Button
 
             10.heightBox,
-            Container(
-              height: 50,
-              width: 280,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: AppColors.redAccenColor),
-              child: Center(
-                child: Text(
-                  "Get Started",
-                  style: GoogleFonts.lexend(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 14,
-                    color: AppColors.whiteColor,
+            InkWell(
+              onTap: () {
+                Navigator.pushNamed(context, "/home");
+              },
+              child: Container(
+                height: 50,
+                width: 280,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: AppColors.redAccenColor),
+                child: Center(
+                  child: Text(
+                    "Get Started",
+                    style: GoogleFonts.lexend(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 14,
+                      color: AppColors.whiteColor,
+                    ),
                   ),
                 ),
               ),
