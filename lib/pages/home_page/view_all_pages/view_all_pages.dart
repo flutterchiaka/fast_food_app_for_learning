@@ -24,7 +24,6 @@ class ViewAllProductPage extends StatelessWidget {
           IconButton(onPressed: () {}, icon: Icon(Icons.restaurant_menu)),
         ],
       ),
-
       body: HomePageProductGridView(),
     );
   }

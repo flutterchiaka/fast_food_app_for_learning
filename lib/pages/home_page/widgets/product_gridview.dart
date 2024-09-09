@@ -22,7 +22,7 @@ class HomePageProductGridView extends StatelessWidget {
           imageUrl: 'assets/imgs/food.jpg',
           title: 'Fast Food ${index + 1}',
           receipt: 'Receipt Info',
-          rating: 4.5, // Example rating
+          rating: 4.5, price: 38, // Example rating
         );
       },
     );
